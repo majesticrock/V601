@@ -3,6 +3,8 @@ all: build/main.pdf
 # hier Python-Skripte:
 build/plot.pdf: plot.py matplotlibrc header-matplotlib.tex | build
 	TEXINPUTS=$$(pwd): python plot.py
+build/raumtemp.pdf: raumtemp.py matplotlibrc header-matplotlib.tex | build
+	TEXINPUTS=$$(pwd): python raumtemp.py
 
 # hier weitere Abhängigkeiten für build/main.pdf deklarieren:
 build/main.pdf: build/plot.pdf
