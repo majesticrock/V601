@@ -1,13 +1,13 @@
 all: build/main.pdf
 
 # hier Python-Skripte:
-build/plot.pdf: plot.py matplotlibrc header-matplotlib.tex | build
-	TEXINPUTS=$$(pwd): python plot.py
+
 build/raumtemp.pdf: raumtemp.py matplotlibrc header-matplotlib.tex | build
 	TEXINPUTS=$$(pwd): python raumtemp.py
-
+build/messreihe2.pdf: messreihe2.py matplotlibrc header-matplotlib.tex | build
+	TEXINPUTS=$$(pwd): python messreihe2.py
 # hier weitere Abhängigkeiten für build/main.pdf deklarieren:
-build/main.pdf: 
+build/main.pdf: build/raumtemp.pdf build/messreihe2.pdf
 
 build/main.pdf: FORCE | build
 	  TEXINPUTS=build: \

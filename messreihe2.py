@@ -12,16 +12,16 @@ def func(x, a, b):
     return a*x +b
 
 
-werte = csv_read("csv/raumtemp.csv")
-xdata = np.zeros(29)
-ydata = np.zeros(29)
+werte = csv_read("csv/messreihe2.csv")
+xdata = np.zeros(21)
+ydata = np.zeros(21)
 ignore = True
 i=0
 
 
 
 for values in werte:
-    if(i >= 29):
+    if(i >= 21):
         break
     if(ignore):
         ignore = False
@@ -45,4 +45,4 @@ plt.ylabel(r"Steigung")
 plt.legend()
 plt.grid()
 plt.tight_layout()
-plt.savefig("build/raumtemp.pdf")
+plt.savefig("build/messreihe2.pdf")
