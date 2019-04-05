@@ -58,4 +58,4 @@ def csv2textable(pathToFile, caption, label, format, delimiter=";"):
         f.write("\\bottomrule\n")
         f.write(fileEnd)
 
-csv2textable("csv/messreihe2.csv", "Differentielle Energieverteilung bei 143°C", "messreihe2", "c c")
+csv2textable("csv/franck.csv", "Abstände der Maxima der Franck-Hertz-Kurve", "franck", "c c c")

@@ -44,5 +44,46 @@
           \label{fig:messreihe2}
         \end{figure}
     \subsection{Franck-Hertz-Kurve} 
-    Die aufgenomme Franck-Hertz-Kurve ist in Abbildung 3 zu sehen. Weitere Franck-Hertz-Kurven sind dem Anhang beigefügt, werden aber in der Auswertung nicht 
-    weiter beachtet, da die ausgewählte Kurve die deutlichsten Extrema aufweist.   
+    Die aufgenomme Franck-Hertz-Kurve ist in Abbildung 3 des Anhangs zu sehen. 
+    Weitere Franck-Hertz-Kurven sind dem Anhang beigefügt, werden aber in der Auswertung nicht weiter beachtet,
+    da die ausgewählte Kurve die deutlichsten Extrema aufweist. Zur Bestimmung der ersten Anregungsenergie des Quecksilbers
+    werden die Abstände der Extrema der Franck-Hertz-Kurve aufgenommen und gemittelt. Hier enstspricht 1cm diesmal 2.45V. Die Spannungsdifferenzen
+    sind in \autoref{tab:franck} aufgestellt. Die Mittelung wird durch
+    \begin{equation}
+      U_{\symup{Anr}} = \frac{1}{8} \sum_{i = 1}^{8} (U_{\symup{i+1}} - U_{\symup{i}})
+    \end{equation}  
+    und der zugehörige Fehler durch 
+    \begin{equation}
+      \Delta U_{\symup{Anr}} = \frac{1}{\sqrt{56}} \sqrt{ \sum_{i = 1}^{8} (U_{\symup{i}} - U_{\symup{Anr}}) }
+    \end{equation}
+    errechnet. Hierdurch ergibt sich eine erste Anregungsspannung von 
+    \\ \\
+    \centerline{$U_{\symup{Anr}} = (5.24 \pm 0.11) \symup{V}$}
+    \\ \\
+    beziehungsweise eine erste Anregungsenergie von
+    \\ \\
+    \centerline{$E_{\symup{Anr}} = (5.24 \pm 0.11) \symup{eV}$.}
+    \\ \\  
+    Durch GLEICHUNG und dem Zusammenhang $\lambda = \frac{c}{\nu}$ ergibt sich die Wellenlänge des emmitierten Lichts zu
+    \\ \\
+    \centerline{$\lambda = (237 \pm 5) nm$},
+    \\ \\
+    wobei sich der Fehler durch Fehlerfortpflanzung zu
+    \begin{equation}
+      \Delta \lambda = \frac{c \cdot h}{E_{\symup{Anr}}} \cdot \Delta E_{\symup{Anr}}
+    \end{equation}
+    berechnet. Das emmitierte Licht liegt damit im ultravioletten Bereich. 
+    ELASTISCHE STÖSSE
+
+    \input{../content/franck.tex}
+
+
+    \subsection{Ionisierungsenergie} 
+    Die Ionisierungsenergie von Quecksilber wird mithilfe von Abbildung 4 aus dem Anhang bestimmt. 
+    Hierzu wird eine Asymptote in die Grafik eingezeichnet. In dieser Grafik enstspricht 1cm $0.23$V.
+    Die Schnittstelle der Asymptote mit der x-Achse liegt somit bei $U_{\symup{Schnitt}} = 2.33$V.
+    Zusammen mit den in \autoref{sec:raumtemp} bestimmtem Kontaktpotential
+    ergibt sich die Ionisierungsenergie somit zu
+    \\ \\
+    \centerline{$E_{\symup{ion}} = 0.57 \symup{eV}$.}????????ß
+    \\ \\
