@@ -49,8 +49,14 @@ genügt, erreichen die Elektronen die Auffägerelektrode und es kann an dieser e
 Ist die Beschleunigungsspannung gerade so hoch, dass die Elektronen genug Energie haben, um die Hg-Atome anzuregen, so wird man einen starken Abfall der Stromstärke an der Auffängerelektrode feststellen.
 Erhöht man die Beschleunigungsspannung weiterhin, so wird dieser Strom erneut ansteigen, bis die Elektronen nach dem ersten Anregungsvorgang genug Energie aufnehmen können, um ein weiteres Atom anregen zu können.
 In diesem Fall fällt der Strom an der Auffängerelektrode erneut rapide ab.
-Die dadurch entstehende Theoriekurve ist in ABBILDUNG zu sehen.
-%TODO: Abbildung Franck-Hertz-Theoriekurve
+Die dadurch entstehende Theoriekurve ist in \autoref{fig:theo-fh-kurve} zu sehen.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{content/franck-hertz-theorie.PNG}
+    \caption{Theoretische Franck-Hertz-Kurve - ohne Störeinflüsse\cite{V601}.}
+    \label{fig:theo-fh-kurve}
+\end{figure}
 
 Diese Kurve wird in der Praxis allerdings breiter und flacher ausfallen.
 Dies liegt daran, dass zum Einen die Elektronen den Glühdraht bereits mit einer gewissen Geschwindigkeitsverteilung verlassen, was dazu führt, dass die Maxima nicht bei einer exakten Spannung festgestellt werden sondern um dieses herum verteilt ebenfalls Stromfluss gemessen wird.
@@ -92,8 +98,12 @@ Diese berechnet sich nach
 wobei $\Phi_\text{B}$ und $\Phi_G$ die Austrittsarbeit der Beschleunigungselektrode beziehungsweise des Glühdrahtes sind.
 Der Summand $\frac{1}{e_0} \cdot (\Phi_\text{B} - \Phi_\text{G})$ wird Kontaktpotential $K$ genannt. Um diesen ist die Franck-Hertz-Kurve verschoben.
 
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{content/ionisierung.PNG}
+    \caption{Theoretische Kurve der Stromstärke $I_\text{A}$ bei dem Ionisationsvorgang\cite{V601}.}
+    \label{fig:ion}
+\end{figure}
 
 Während der Messung der Ionisationsenergie wird der Wert des Auffängerstroms $I_\text{A}$ zunächst 0 A betragen.
-Ist die Ionisationsspannung erreicht, so wird die Stromstärke rapide ansteigen. Die Theoriekurve dazu ist in ABBILDUNG zu sehen.
-
-%TODO: Abbildung; Ionisation
+Ist die Ionisationsspannung erreicht, so wird die Stromstärke rapide ansteigen. Die Theoriekurve dazu ist in \autoref{fig:ion} zu sehen.
