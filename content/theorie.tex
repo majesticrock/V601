@@ -1,13 +1,14 @@
 \section{Zielsetzung}
 
-In diesem Versuch soll der Franck-Hertz-Versuch untersucht werden. Dabei wird die Energiedifferenz zwischen dem ersten angeregten und dem Grundzustand von Hg-Atomen untersucht.
+In diesem Experiement soll sich der Franck-Hertz-Versuch näher angeschaut werden. Dabei wird die Energiedifferenz zwischen dem ersten angeregten und dem Grundzustand von Hg-Atomen untersucht.
 Des Weiteren wird die Ionisationsenergie untersucht.
 
 \section{Theorie}
 \label{sec:Theorie}
 
 In dem Franck-Hertz-Versuch werden Elektronenstöße verwendet, um Hg-Atome anzuregen.
-Dabei können sowohl elastische als auch unelastische Stöße vorkommen, wobei erstere lediglich die Richtung der Elektronen ändert. Der Energieverlust ist hier kann aufgrund des großen Masseunterschiedes zwischen Hg-Atom und Elektron vernachlässigt werden.
+Dabei können sowohl elastische als auch unelastische Stöße vorkommen, wobei erstere lediglich die Richtung der Elektronen ändert. 
+Der Energieverlust kann hier aufgrund des großen Masseunterschiedes zwischen Hg-Atom und Elektron vernachlässigt werden.
 Letztere hingegen sorgen dafür, dass die Elektronen kinetische Energie verlieren. Diese Energie wird zur Anregung des Atoms genutzt.
 Die Energiedifferenz der Elektronen ergibt sich damit nach
 
@@ -16,7 +17,7 @@ Die Energiedifferenz der Elektronen ergibt sich damit nach
     \Delta E = E_1 - E_0 = \frac{m_\text{e}}{2} \cdot (v_\text{vor}^2 - v_\text{nach}^2),
 \end{equation}
 
-wobei $m_\text{e}$ die Elektronenmasse und $v_\text{vor}$ und $\v_text{nach}$ die Geschwindigkeiten der Elektronen vor beziehungsweise nach dem unelastischen Stoß sind.
+wobei $m_\text{e}$ die Elektronenmasse und $v_\text{vor}$ und $v_\text{nach}$ die Geschwindigkeiten der Elektronen vor beziehungsweise nach dem unelastischen Stoß sind.
 Dies ist ebenfalls die Energie des emittierten Photons, wenn das Atom zurück in den Grundzustand fällt. Dabei gilt die Relation
 
 \begin{equation}
@@ -26,9 +27,16 @@ Dies ist ebenfalls die Energie des emittierten Photons, wenn das Atom zurück in
 
 für die Frequenz $\nu$ des Photons, wobei $h$ das Planck'sche Wirkungsquantum ist.
 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{content/fh-roehre.png}
+    \caption{Aufbau einer Röhre mit Gegenfeld\cite{V601}.}
+    \label{fig:ion}
+\end{figure}
+
 Zur Bestimmung dieser Energie wird die sogenannte Gegenfeldmethode benutzt.
 Hierbei werden die Elektronen in einem Quecksilberdampf mittels einer Beschleunigungselektrode beschleunigt. An dieser liegt die Spannung $U_\text{B}$ an.
-Nach dieser befindet sich eine massive Auffägerelektrode, an der eine Gegenspannung $U_\text{A}$ anliegt.
+Nach dieser befindet sich eine Auffägerelektrode, an der eine Gegenspannung $U_\text{A}$ anliegt. Dieser Aufbau ist in \autoref{fig:gegenfeld} zu sehen.
 Wenn die Elektronen auf der Strecke bis zu der Beschleunigungselektrode keine Stöße erfahren und mit der Geschwindigkeit $v = 0$ beginnen, so kann ihre Energie an dieser Stelle mittels
 
 \begin{equation}
@@ -46,14 +54,16 @@ Wenn diese Geschwindigkeit in $z$-Richtung der Ungleichung
 \end{equation}
 
 genügt, erreichen die Elektronen die Auffägerelektrode und es kann an dieser ein Strom gemessen werden.
-Ist die Beschleunigungsspannung gerade so hoch, dass die Elektronen genug Energie haben, um die Hg-Atome anzuregen, so wird man einen starken Abfall der Stromstärke an der Auffängerelektrode feststellen.
-Erhöht man die Beschleunigungsspannung weiterhin, so wird dieser Strom erneut ansteigen, bis die Elektronen nach dem ersten Anregungsvorgang genug Energie aufnehmen können, um ein weiteres Atom anregen zu können.
-In diesem Fall fällt der Strom an der Auffängerelektrode erneut rapide ab.
+Ist die Beschleunigungsspannung gerade so hoch, dass die Elektronen genug Energie haben, 
+um die Hg-Atome anzuregen, so wird man einen starken Abfall der Stromstärke an der Auffängerelektrode feststellen.
+Erhöht man die Beschleunigungsspannung weiterhin, so wird dieser Strom erneut ansteigen, 
+bis die Elektronen nach dem ersten Anregungsvorgang genug Energie aufnehmen können, um ein weiteres Atom anregen zu können.
+In diesem Fall sinkt der Strom an der Auffängerelektrode erneut rapide.
 Die dadurch entstehende Theoriekurve ist in \autoref{fig:theo-fh-kurve} zu sehen.
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{content/franck-hertz-theorie.PNG}
+    \includegraphics[width=0.8\textwidth]{content/franck-hertz-theorie.PNG}
     \caption{Theoretische Franck-Hertz-Kurve - ohne Störeinflüsse\cite{V601}.}
     \label{fig:theo-fh-kurve}
 \end{figure}
@@ -100,7 +110,7 @@ Der Summand $\frac{1}{e_0} \cdot (\Phi_\text{B} - \Phi_\text{G})$ wird Kontaktpo
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{content/ionisierung.PNG}
+    \includegraphics[width=0.6\textwidth]{content/ionisierung.PNG}
     \caption{Theoretische Kurve der Stromstärke $I_\text{A}$ bei dem Ionisationsvorgang\cite{V601}.}
     \label{fig:ion}
 \end{figure}
