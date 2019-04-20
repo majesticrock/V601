@@ -19,7 +19,7 @@
         In der Grafik zeigt die y-Achse die Steigung der integralen Verteilung, welche proportional zur Anzahl Elektronen ist, während die x-Achse
         die Abbremsspannung $U_{\symup{A}}$ zeigt und damit proportional zur Energie der Elektronen ist.
         Wie zu sehen ist haben die meisten Elektronen eine Energie von $9.24$eV. Die angelegte, konstante Beschleunigungsspannung $U_{\symup{B}}$
-        ist aber auf $11$V eingestellt. Nach \eqref{eqn:accl-eff} beträgt das Kontaktpotential somit $K = 1.76$V. Die in \autoref{fig:raumtemp} dargestellte 
+        ist aber auf $11$V eingestellt. Nach \eqref{eqn:accl-eff} beträgt das Kontaktpotential somit $K_{\symup{1}} = 1.76$V. Die in \autoref{fig:raumtemp} dargestellte 
         Kurve beschreibt zunächst eine relativ konstante Verteilung mit geringen Werten, steigt dann aber steil zum Maximum an, um danach ebenfalls steil
         wieder zu sinken. Aus diesem Peak lässt sich, wie bereits erwähnt, schließen, dass die meisten Elektronen die selbe Energie haben. 
         \input{../content/messreihe1.tex}
@@ -50,7 +50,7 @@
     Die aufgenomme Franck-Hertz-Kurve ist in Abbildung 3 des Anhangs zu sehen. 
     Weitere Franck-Hertz-Kurven sind dem Anhang beigefügt, werden aber in der Auswertung nicht weiter beachtet,
     da die ausgewählte Kurve die deutlichsten Extrema aufweist. Zur Bestimmung der ersten Anregungsenergie des Quecksilbers
-    werden die Abstände der Extrema der Franck-Hertz-Kurve aufgenommen und gemittelt. Hier enstspricht 1cm diesmal 2.45V. Die Spannungsdifferenzen
+    werden die Abstände der Extrema der Franck-Hertz-Kurve aufgenommen und gemittelt. In dieser Abbildung enstspricht 1cm hier 2.45V. Die Spannungsdifferenzen
     sind in \autoref{tab:franck} aufgestellt. Die Mittelung wird durch
     \begin{equation}
       U_{\symup{Anr}} = \frac{1}{8} \sum_{i = 1}^{8} (U_{\symup{i+1}} - U_{\symup{i}})
@@ -76,6 +76,15 @@
       \Delta \lambda = \frac{c \cdot h}{E_{\symup{Anr}}} \cdot \Delta E_{\symup{Anr}}
     \end{equation}
     berechnet. Das emmitierte Licht liegt damit im ultravioletten Bereich. 
+    Das erste Spannungsmaximum liegt bei 
+    \\ \\
+    \centerline{$U_{\symup{1}} = 5.70$V.}
+    \\ \\
+    Da $U_{\symup{1}} = K + U_{\symup{Anr}} $ gilt, lässt sich das Kontaktpotential zu 
+    \\ \\
+    \centerline{$K_{\symup{2}} = (0.46 \pm 0.11)$ V}
+    \\ \\
+    bestimmen.
     
 
     \input{../content/franck.tex}
@@ -83,10 +92,11 @@
 
     \subsection{Ionisierungsenergie} 
     Die Ionisierungsenergie von Quecksilber wird mithilfe von Abbildung 4 aus dem Anhang bestimmt. 
-    Hierzu wird eine Asymptote in die Grafik eingezeichnet. In dieser Grafik enstspricht 1cm $0.23$V.
-    Die Schnittstelle der Asymptote mit der x-Achse liegt somit bei $U_{\symup{Schnitt}} = 2.33$V.
-    Zusammen mit den in \autoref{sec:raumtemp} bestimmtem Kontaktpotential
-    ergibt sich die Ionisierungsenergie somit zu
+    Hierzu wird eine Asymptote in die Grafik eingezeichnet. In dieser Grafik enstspricht 1cm $1$V.
+    Die Schnittstelle der Asymptote mit der x-Achse liegt somit bei $U_{\symup{Schnitt}} = 10$V.
+    Zusammen mit den zuvor bestimmten Kontaktpotentialen
+    ergeben sich die Ionisierungsenergien somit zu
     \\ \\
-    \centerline{$E_{\symup{ion}} = 0.57 \symup{eV}$.}
+    \centerline{$E_{\symup{ion, 1}} = 8.24 \symup{eV}$,}
     \\ \\
+    \centerline{$E_{\symup{ion, 2}} = (9.54 \pm 0.11) \symup{eV}$.}
